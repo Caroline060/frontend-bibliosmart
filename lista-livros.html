@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Livros</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-emprestimo.html">EMPRESTIMO</a>
+            <a href="acervo.html">ACERVO</a>
+        </nav>
+    </header>
+    <div class="painel">
+        <div class="esquerda">
+            <div>
+                <a href="cadastro-livro.html">NOVO LIVRO</a>
+            </div>
+        </div>
+        <div class="meio">
+            <h1>LIVRO</h1>
+        </div>
+        <div class="direita"></div>
+    </div>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID LIVRO</th>
+                    <th>TÍTULO</th>
+                    <th>NOME DO AUTOR</th>
+                    <th>EDITORA</th>
+                    <th>ANO DE PUBLICAÇÃO</th>
+                    <th>QUANTIDADE NO ACERVO</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>O Vaso</td>
+                    <td>Maria V. Bernardes</td>
+                    <td>Letramento</td>
+                    <td>2020</td>
+                    <td>10</td>
+                    <td>
+                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
+                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>O Jardim Secreto</td>
+                    <td>Frances Hodgson Burnett</td>
+                    <td>Ciranda Cultural</td>
+                    <td>2020</td>
+                    <td>08</td>
+                    <td>
+                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
+                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>A Cartomante</td>
+                    <td>Machado de Assis</td>
+                    <td>Moderna</td>
+                    <td>2015</td>
+                    <td>12</td>
+                    <td>
+                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
+                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

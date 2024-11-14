@@ -1,0 +1,58 @@
+:root {
+    --cabecalho: #3E385B;
+    --linhas: #312C4B;
+    --bordas: #EFEFEF;
+}
+
+table {
+    width: 80%;
+    margin: auto auto;
+    margin-top: 2%;
+}
+
+table tr:hover {
+    background-color: #312C4B;
+}
+
+table tr:hover td {
+    border-color: var(--linhas);
+}
+
+table th {
+    background-color: var(--cabecalho);
+    color: white;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+table tr {
+    background-color: var(--linhas);
+    color: white;
+    height: 2.5rem;
+}
+
+th, td {
+    border: 1px solid var(--bordas);
+    text-align: center;
+}
+
+td img {
+    filter: invert(0.9);
+    width: 15%;
+    margin: 0.4rem;
+}
+
+td img :hover {
+    filter: invert(0.9);
+}
+
+
+button {
+    background-color: var(--linhas);
+    img {
+        width: 50%;
+    }
+
+}
+

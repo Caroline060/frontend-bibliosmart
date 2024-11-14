@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Livro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-emprestimo.html">EMPRESTIMO</a>
+            <a href="acervo.html">ACERVO</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DE LIVRO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                <br>
+                <input type="text" name="input-titulo-livro" placeholder="Insira o título do livro" required>
+            </label>
+
+            <label>
+                <br>
+                <input type="text" name="input-autor-livro" placeholder="Insira o nome do autor do livro" required>
+            </label>
+
+            <label>
+                <br>
+                <input type="text" name="input-editora-livro" placeholder="Insira a editora do livro" required>
+            </label>
+
+            <label>
+                <br>
+                <input type="number" name="input-ano-publicacao-livro" placeholder="Insira o ano de publicação do livro" required>
+            </label>
+            
+            <label>
+                <br>
+                <input type="text" name="input-isbn-livro" placeholder="Insira o isbn do livro" required>
+            </label>
+            <label>
+                <br>
+                <input type="number" name="input-quantidade-livro" placeholder="Insira a quantidade do livro no acervo" required>
+            </label>
+
+            <input type="button" value="CADASTRAR LIVROS" onclick="enviaFormulario()">
+        </form>
+    </div>
+    <img src="assets/images/cadastro livro.png" alt="">
+    <script src="js/livro.js"></script>
+</body>

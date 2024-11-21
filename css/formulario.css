@@ -54,10 +54,10 @@ input[type="button"]:hover {
 
 img {
     background-size: contain;
-    width: 500px; /* ajuste o tamanho conforme necessário */
-    height: 483px; /* ajuste o tamanho conforme necessário */
+    width: 500px; 
+    height: 483px;
     position: absolute;
-    bottom: -376px;
+    bottom: -730px;
     right: -3px;
 }
 

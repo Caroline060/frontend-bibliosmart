@@ -1,12 +1,15 @@
 async function enviaFormulario() {
     // recuperar as informações do formulário e colocar em objeto JSON
     const livroDTO = {
-        "título": document.querySelectorAll("input")[0].value,
+        "titulo": document.querySelectorAll("input")[0].value,
         "autor": document.querySelectorAll("input")[1].value,
         "editora": document.querySelectorAll("input")[2].value,
-        "publicação": Date(document.querySelectorAll("input")[3].value),
-        "ISBN": document.querySelectorAll("input")[4].value,
-        "quantidade": Number(document.querySelectorAll("input")[5].value)
+        "anoPublicacao": document.querySelectorAll("input")[3].value,
+        "isbn": document.querySelectorAll("input")[4].value,
+        "quantTotal": document.querySelectorAll("input")[5].value,
+        "quantDisponivel": document.querySelectorAll("input")[6].value,
+        "valorAquisicao": document.querySelectorAll("input")[7].value,
+        "statusLivroEmprestado": document.querySelectorAll("input")[8].value
     }
 
     try {

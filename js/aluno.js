@@ -1,10 +1,10 @@
-async function enviaFormulario() {
+async function enviarFormulario() {
     // recuperar as informações do formulário e colocar em objeto JSON
     const alunoDTO = {
         "nome": document.querySelectorAll("input")[0].value,
         "ra": document.querySelectorAll("input")[1].value,
-        "data de nascimento": Date(document.querySelectorAll("input")[2].value),
-        "endereço": document.querySelectorAll("input")[3].value,
+        "dataNascimento": document.querySelectorAll("input")[2].value,
+        "endereco": document.querySelectorAll("input")[3].value,
         "email": document.querySelectorAll("input")[4].value,
         "telefone": document.querySelectorAll("input")[5].value
     }
@@ -14,7 +14,7 @@ async function enviaFormulario() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-            },
+            },  
             body: JSON.stringify(alunoDTO)
         });
     
@@ -27,4 +27,25 @@ async function enviaFormulario() {
         console.log(error);
         alert(`Erro ao se comunicar com o servidor. ${error}`);
     }
-}
+
+    /*if(alert="Aluno cadastrado com sucesso!"){
+        const tabelaBody = document.querySelector('table tbody'); // Seleciona o corpo da tabela
+    
+        const novaLinha = document.createElement('tr'); // Cria uma nova linha
+        
+        novaLinha.innerHTML = `
+            <td>${id}</td>
+            <td>${ra}</td>
+            <td>${nome}</td>
+            <td>${email}</td>
+            <td>${celular}</td>
+            <td>${dataNascimento}</td>
+            <td>
+            <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
+            <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
+            </td>
+        `;
+        
+        tabelaBody.appendChild(novaLinha); // Adiciona a nova linha à tabela
+    }*/
+ }

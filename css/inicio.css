@@ -1,19 +1,17 @@
 ** {
-        font-family: "KoHo", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-
-      
+    font-family: "KoHo", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 /* Seção de Boas-Vindas */
-.bv-section {
+.boas-vindas {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-.bv-direita {
+.painel-direito {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,13 +19,9 @@
     margin-bottom: 15px;
 }
 
-.welcome-icon {
-    width: 40px;
-    height: 40px;
-}
-
-.texto-bv {
-    background-color: #3d335b;
+/*Frase Boas-Vindas*/
+.boas-vindas {
+    background-color: #312C4B;
     color: #ffffff;
     padding: 10px 20px;
     font-size: 20px;
@@ -37,33 +31,48 @@
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.boas-vindas {
+/*Frase sobre a biblioteca*/
+.frase-bv{
     color: #333333;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "KoHo", sans-serif;  
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+    text-align: center;
+}
+
+.painel-central {
+    position: relative;
+    width: 100%;
 }
 
 /* Imagem do Livro Aberto */
-.book-section {
+.painel-central img {
     text-align: center;
-    margin-top: 20px;
 }
 
-.img {
-    margin-top: 0 auto;
-    width: 756px;
-    height: 799px;
+/*imagem do Livro Aberto*/
+img {
+    text-align: center;
+    margin-top: -125px;
+    width: 656px;
+    height: 699px;
+    margin-left: 380px;
 }
 
-.frase {
+/*frase embaixo do livro*/
+.painel-central p {
+    position: absolute;
+    top: 65%; /* Move o texto para o centro vertical */
+    left: 29.5%;
     color: #333333;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
 }

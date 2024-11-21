@@ -4,20 +4,24 @@
     --bordas: #EFEFEF;
 }
 
+/*Ajustes da Tabela*/
 table {
     width: 80%;
     margin: auto auto;
     margin-top: 2%;
 }
 
+/*Quando passar mouse sobre a Tabela*/
 table tr:hover {
     background-color: #312C4B;
 }
 
+/*Passar mouse por cima das linhas*/
 table tr:hover td {
     border-color: var(--linhas);
 }
 
+/*Cabeçalho*/
 table th {
     background-color: var(--cabecalho);
     color: white;
@@ -26,28 +30,32 @@ table th {
     font-weight: bold;
 }
 
+/*Linhas*/
 table tr {
     background-color: var(--linhas);
     color: white;
     height: 2.5rem;
 }
 
+/*Textos da tabela*/
 th, td {
     border: 1px solid var(--bordas);
     text-align: center;
 }
 
+/*Imagens de Editar e Apagar*/
 td img {
     filter: invert(0.9);
     width: 15%;
     margin: 0.4rem;
 }
 
+/*Passar o mouse sobre a imagem*/
 td img :hover {
     filter: invert(0.9);
 }
 
-
+/*Botão (fundo da imagem)*/
 button {
     background-color: var(--linhas);
     img {
@@ -56,3 +64,11 @@ button {
 
 }
 
+/*Tabela de Listagem dos livros*/
+.livros{
+    font-size: 14px; /* Ajuste conforme necessário */
+}
+
+th {
+    font-size: 8px;
+}

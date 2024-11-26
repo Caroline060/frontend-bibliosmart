@@ -61,14 +61,14 @@ img {
     margin-top: -125px;
     width: 656px;
     height: 699px;
-    margin-left: 380px;
+    margin-left: 300px;
 }
 
 /*frase embaixo do livro*/
 .painel-central p {
     position: absolute;
-    top: 65%; /* Move o texto para o centro vertical */
-    left: 29.5%;
+    top: 64%; /* Move o texto para o centro vertical */
+    left: 26.6%;
     color: #333333;
     font-size: 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;

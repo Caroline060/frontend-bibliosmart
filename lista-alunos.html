@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/navegacao.css">
     <link rel="stylesheet" href="css/listagem.css">
 </head>
-<body>
+<body onload="recuperarListaAlunos()">
     <header>
         <nav>
             <a href="index.html">INÍCIO</a>
@@ -43,45 +43,9 @@
                     <th>AÇÕES</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>4967</td>
-                    <td>Ana Elize Souza</td>
-                    <td>anasouza@gmail.com</td>
-                    <td>(11) 91234-5678</td>
-                    <td>11/07/2006</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>4026</td>
-                    <td>Luís Otávio Bordin</td>
-                    <td>luisotavio23@gmail.com</td>
-                    <td>(21) 99876-5432</td>
-                    <td>08/03/2010</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>4583</td>
-                    <td>Aaron de Carvalho</td>
-                    <td>aaron.carvalho@gmail.com</td>
-                    <td>(31) 98765-4321</td>
-                    <td>13/09/2007</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
+    <script src="js/aluno.js"></script>
 </body>
 </html>

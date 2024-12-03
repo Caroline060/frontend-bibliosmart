@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/navegacao.css">
     <link rel="stylesheet" href="css/listagem.css">
 </head>
-<body>
+<body onload="recuperarListaLivros()">
     <header>
         <nav>
             <a href="index.html">INÍCIO</a>
@@ -43,45 +43,8 @@
                     <th>AÇÕES</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>O Vaso</td>
-                    <td>Maria V. Bernardes</td>
-                    <td>Letramento</td>
-                    <td>2020</td>
-                    <td>10</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>O Jardim Secreto</td>
-                    <td>Frances Hodgson Burnett</td>
-                    <td>Ciranda Cultural</td>
-                    <td>2020</td>
-                    <td>08</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>A Cartomante</td>
-                    <td>Machado de Assis</td>
-                    <td>Moderna</td>
-                    <td>2015</td>
-                    <td>12</td>
-                    <td>
-                        <button><img src="assets/icons/pencil-square.svg" alt="editar"></button>
-                        <button><img src="assets/icons/trash-fill.svg" alt="excluir"></button>
-                    </td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
-</body>
+    <script src="js/livro.js"></script>
 </html>

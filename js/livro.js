@@ -30,4 +30,97 @@ async function enviaFormulario() {
         console.log(error);
         alert(`Erro ao se comunicar com o servidor. ${error}`);
     }
+
+    async function recuperarListaLivros() {
+        try {
+            const respostaServidor = await fetch('http://localhost:3333/lista/livros');
+    
+            if (!respostaServidor.ok) {
+                throw new Error("Erro ao recuperar a lista de livros.");
+            }
+    
+            const listaDeLivros = await respostaServidor.json();
+    
+            // Valida se a resposta é um array
+            if (Array.isArray(listaDeLivros)) {
+                criarTabelaLivros(listaDeLivros);
+            } else {
+                console.error("Resposta da API inválida:", listaDeLivros);
+            }
+        } catch (error) {
+            console.error("Erro ao recuperar a lista de livros:", error.message);
+        }
+    }
+    
+    async function criarTabelaLivros(livros) {
+        try {
+            const tBody = document.querySelector('tbody');
+    
+            // Remove linhas antigas antes de recriar a tabela
+            tBody.innerHTML = "";
+    
+            livros.forEach(livro => {
+                const tr = document.createElement('tr');
+    
+                // Cria e adiciona a célula para o ID
+                const tdId = document.createElement('td');
+                tdId.textContent = livro.id;
+                tr.appendChild(tdId);
+    
+                // Cria e adiciona a célula para o título
+                const tdTitulo = document.createElement('td');
+                tdTitulo.textContent = livro.titulo;
+                tr.appendChild(tdTitulo);
+    
+                // Cria e adiciona a célula para o autor
+                const tdAutor = document.createElement('td');
+                tdAutor.textContent = livro.autor;
+                tr.appendChild(tdAutor);
+    
+                // Cria e adiciona a célula para a editora
+                const tdEditora = document.createElement('td');
+                tdEditora.textContent = livro.editora;
+                tr.appendChild(tdEditora);
+    
+                // Cria e adiciona a célula para o ano de publicação
+                const tdAnoPublicacao = document.createElement('td');
+                tdAnoPublicacao.textContent = livro.anoPublicacao;
+                tr.appendChild(tdAnoPublicacao);
+    
+                // Cria e adiciona a célula para o ISBN
+                const tdIsbn = document.createElement('td');
+                tdIsbn.textContent = livro.isbn;
+                tr.appendChild(tdIsbn);
+    
+                // Cria e adiciona a célula para quantidade disponível
+                const tdDisponiveis = document.createElement('td');
+                tdDisponiveis.textContent = livro.quantDisponivel;
+                tr.appendChild(tdDisponiveis);
+    
+                // Cria e adiciona a célula de ações
+                const tdAcoes = document.createElement('td');
+    
+                // Adiciona o botão de editar
+                const imgEditar = document.createElement('img');
+                imgEditar.src = './assets/icons/pencil-square.svg';
+                imgEditar.alt = 'Editar';
+                imgEditar.classList.add('btn-editar');
+                tdAcoes.appendChild(imgEditar);
+    
+                // Adiciona o botão de deletar
+                const imgDeletar = document.createElement('img');
+                imgDeletar.src = './assets/icons/trash-fill.svg';
+                imgDeletar.alt = 'Deletar';
+                imgDeletar.classList.add('btn-deletar');
+                tdAcoes.appendChild(imgDeletar);
+    
+                tr.appendChild(tdAcoes);
+    
+                // Adiciona a linha na tabela
+                tBody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error("Erro ao criar a tabela de livros:", error.message);
+        }
+    }
 }

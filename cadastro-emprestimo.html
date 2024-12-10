@@ -8,7 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/navegacao.css">
-    <link rel="stylesheet" href="css/cad-livro.css">
+    <link rel="stylesheet" href="css/cad-emprestimo.css">
 
 <body>
     <header>
@@ -25,47 +25,32 @@
         <form action="">
             <label>
                 <br>
-                <input type="text" name="input-titulo-livro" placeholder="Insira o título do livro" required>
+                <input type="number" name="input-id-aluno" placeholder="Insira o id do aluno" required>
             </label>
 
             <label>
                 <br>
-                <input type="text" name="input-autor-livro" placeholder="Insira o nome do autor do livro" required>
+                <input type="number" name="input-id-livro" placeholder="Insira o id do livro" required>
             </label>
 
             <label>
                 <br>
-                <input type="text" name="input-editora-livro" placeholder="Insira a editora do livro" required>
+                <input type="date" name="input-data-emprestimo" placeholder="Insira a data do emprestimo" required>
             </label>
 
             <label>
                 <br>
-                <input type="number" name="input-ano-publicacao-livro" placeholder="Insira o ano de publicação do livro" required>
+                <input type="date" name="input-data-devolucao" placeholder="Insira a data de devolução do livro" required>
             </label>
             
             <label>
                 <br>
-                <input type="text" name="input-isbn-livro" placeholder="Insira o isbn do livro" required>
+                <input type="text" name="input-status-emprestimo" placeholder="Insira o status atual do emprestimo" required>
             </label>
-            <label>
-                <br>
-                <input type="number" name="input-quantidade-total-livro" placeholder="Insira a quantidade total de livros no acervo" required>
-            </label>
-            <label>
-                <br>
-                <input type="number" name="input-quantidade-disponivel-livro" placeholder="Insira a quantidade disponível de livros no acervo" required>
-            </label>
-            <label>
-                <br>
-                <input type="number" name="input-valor-livro" placeholder="Insira o valor de aquisição do livro" required>
-            </label>
-            <label>
-                <br>
-                <input type="text" name="input-status-livro" placeholder="Insira o status do livro" required>
-            </label>
-            <input type="button" value="CADASTRAR LIVROS" onclick="enviaFormulario()">
+
+            <input type="button" value="CADASTRAR EMPRESTIMO" onclick="enviaFormulario()">
         </form>
     </div>
-    <img src="assets/images/cadastro livro.png" alt="">
+    <img src="assets/images/aluno_emprestimo.png" alt="">
     <script src="js/livro.js"></script>
 </body>
